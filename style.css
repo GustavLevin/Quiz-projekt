@@ -19,7 +19,17 @@ header {
     height: 100%;
     width: 100%;
     display: flex;
+    
+}
+
+.q-wrapper {
+    display: flex;
     flex-direction: column;
+}
+
+.a-wrapper {
+    display: flex;
+    
 }
 
 .question1 {
@@ -43,6 +53,9 @@ header {
     background-color: white;
     height: 10%;
     border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     
 }
 .question4 {
@@ -67,12 +80,18 @@ header {
     background-color: white;
     height: 10%;
     border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     
 }
 .question7 {
     background-color: white;
     height: 10%;
     border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .question8 {
     background-color: white;
@@ -87,9 +106,15 @@ header {
     background-color: white;
     height: 10%;
     border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
     .question10 {
         background-color: white;
         height: 10%;
         border: 2px solid black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
