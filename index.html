@@ -10,122 +10,112 @@
   <body>
     <header><h1>Gotlands Quiz</h1></header>
     <div class="wrapper">
-      <div class="q-wrapper">
-        <div class="question1">
-          <h2>Hur många bor på Gotland?</h2>
-          <label for="10 000">10 000</label>
-          <input type="radio" name="q1" value="10000" id="10000" />
-          <label for="20 000">20 000</label>
-          <input type="radio" name="q1" value="20000" id="20000" />
-          <label for="40 000">40 000</label>
-          <input type="radio" name="q1" value="40000" id="40000" />
-          <label for="60 000">60 000</label>
-          <input type="radio" name="q1" value="60000" id="60000" />
-        </div>
-
-        <div class="question2">
-          <h2>Gotland har tillhört Danmark</h2>
-          <label for="true">Sant</label>
-          <input type="radio" name="q2" value="true" id="true" />
-          <label for="false">Falskt</label>
-          <input type="radio" name="q2" value="false" id="false" />
-        </div>
-        <div class="question3">
-          <h2>Är Gotland en ö?</h2>
-          <label for="island">Sant</label>
-          <input type="radio" name="q3" value="true" id="island" />
-          <label for="false">Falskt</label>
-          <input type="radio" name="q3" value="false" id="false" />
-        </div>
-        <div class="question4">
-          <h2>Vilka av följande 3 är socknar på Gotland?</h2>
-          <label for="socknar">Hemse</label>
-          <input type="checkbox" name="q4" value="hemse" id="hemse" />
-          <label for="alt2">Sproge</label>
-          <input type="checkbox" name="q4" value="sproge" id="sproge" />
-          <label for="alt3">Alternativ 3</label>
-          <input
-            type="checkbox"
-            name="q4"
-            value="alternativ3"
-            id="alternativ3"
-          />
-          <label for="alt4">Alternativ 4</label>
-          <input
-            type="checkbox"
-            name="q4"
-            value="alternativ4"
-            id="alternativ4"
-          />
-        </div>
-        <div class="question5">
-          <h2>Vad betyder Pinnsvein på gotländska?</h2>
-          <label for="Piggvar">Piggvar</label>
-          <input type="radio" name="q5" value="Piggvar" id="Piggvar" />
-          <label for="Piggsvin">Piggsvin</label>
-          <input type="radio" name="q5" value="Piggsvin" id="Piggsvin" />
-          <label for="Igelkotte">Igelkotte</label>
-          <input type="radio" name="q5" value="Igelkotte" id="Igelkotte" />
-          <label for="Gris">Gris</label>
-          <input type="radio" name="q5" value="Gris" id="Gris" />
-        </div>
-        <div class="question6">
-          <h2>Finns Älg på Gotland?</h2>
-          <label for="true">Sant</label>
-          <input type="radio" name="q2" value="true" id="true" />
-          <label for="false">Falskt</label>
-          <input type="radio" name="q2" value="false" id="false" />
-        </div>
-        <div class="question7">
-          <h2>Vilka 3 följande öar tillhör Gotlands region?</h2>
-          <label for="öar">Gotska Sandön</label>
-          <input type="checkbox" name="q7" value="gotska" id="gotska" />
-          <label for="öar">Blå Jungfrun</label>
-          <input type="checkbox" name="q7" value="jungfrun" id="jungfrun" />
-          <label for="öar">Stora Karlsö</label>
-          <input type="checkbox" name="q7" value="karlsö" id="karlsö" />
-          <label for="öar">Fårö</label>
-          <input type="checkbox" name="q7" value="fårö" id="fårö" />
-        </div>
-        <div class="question8">
-          <h2>När är Medeltidsveckan på Gotland?</h2>
-          <label for="v.29">v.29</label>
-          <input type="radio" name="q8" value="v.29" id="v.29" />
-          <label for="v.30">v.30</label>
-          <input type="radio" name="q8" value="v.30" id="v.30" />
-          <label for="v.31">v.31</label>
-          <input type="radio" name="q8" value="v.31" id="v.31" />
-          <label for="v.32">v.32</label>
-          <input type="radio" name="q8" value="v.32" id="v.32" />
-        </div>
-        <div class="question9">
-          <h2>?</h2>
-          <label for="öar">Gotska Sandön</label>
-          <input type="checkbox" name="q9" value="gotska" id="gotska" />
-          <label for="öar">Blå Jungfrun</label>
-          <input type="checkbox" name="q9" value="jungfrun" id="jungfrun" />
-          <label for="öar">Stora Karlsö</label>
-          <input type="checkbox" name="q9" value="karlsö" id="karlsö" />
-          <label for="öar">Fårö</label>
-          <input type="checkbox" name="q9" value="fårö" id="fårö" />
-        </div>
-        <div class="question10">
-          <h2>Hur lång är ön?</h2>
-          <label for="längd">156km</label>
-          <input type="radio" name="q10" value="156" id="156" />
-          <label for="längd">106km</label>
-          <input type="radio" name="q10" value="106" id="106" />
-          <label for="längd">176km</label>
-          <input type="radio" name="q10" value="176" id="176" />
-          <label for="längd">206km</label>
-          <input type="radio" name="q10" value="206" id="206" />
-        </div>
-        <div class="showResult">
-          <button id="resultBtn">Rätta prov</button>
-        </div>
+      <div class="question 1">
+        <h2>Hur många bor på Gotland?</h2>
+        <label for="10 000">10 000</label>
+        <input type="radio" name="q1" value="10000" id="10000" />
+        <label for="20 000">20 000</label>
+        <input type="radio" name="q1" value="20000" id="20000" />
+        <label for="40 000">40 000</label>
+        <input type="radio" name="q1" value="40000" id="40000" />
+        <label for="60 000">60 000</label>
+        <input type="radio" name="q1" value="60000" id="60000" />
       </div>
-      <div class="a-wrapper">
+
+      <div class="question 2">
+        <h2>Gotland har tillhört Danmark</h2>
+        <label for="true">Sant</label>
+        <input type="radio" name="q2" value="true" id="true" />
+        <label for="false">Falskt</label>
+        <input type="radio" name="q2" value="false" id="false" />
+      </div>
+      <div class="question 3">
+        <h2>Är Gotland en ö?</h2>
+        <label for="island">Sant</label>
+        <input type="radio" name="q3" value="true" id="island" />
+        <label for="false">Falskt</label>
+        <input type="radio" name="q3" value="false" id="false" />
+      </div>
+      <div class="question 4">
+        <h2>Vilka av följande 3 är socknar på Gotland?</h2>
+        <label for="socknar">Hemse</label>
+        <input type="checkbox" name="q4" value="hemse" id="hemse" />
+        <label for="alt2">Sproge</label>
+        <input type="checkbox" name="q4" value="sproge" id="sproge" />
+        <label for="alt3">Alternativ 3</label>
+        <input type="checkbox" name="q4" value="alternativ3" id="alternativ3" />
+        <label for="alt4">Alternativ 4</label>
+        <input type="checkbox" name="q4" value="alternativ4" id="alternativ4" />
+      </div>
+      <div class="question 5">
+        <h2>Vad betyder Pinnsvein på gotländska?</h2>
+        <label for="Piggvar">Piggvar</label>
+        <input type="radio" name="q5" value="Piggvar" id="Piggvar" />
+        <label for="Piggsvin">Piggsvin</label>
+        <input type="radio" name="q5" value="Piggsvin" id="Piggsvin" />
+        <label for="Igelkotte">Igelkotte</label>
+        <input type="radio" name="q5" value="Igelkotte" id="Igelkotte" />
+        <label for="Gris">Gris</label>
+        <input type="radio" name="q5" value="Gris" id="Gris" />
+      </div>
+      <div class="question 6">
+        <h2>Finns Älg på Gotland?</h2>
+        <label for="true">Sant</label>
+        <input type="radio" name="q6" value="true" id="true" />
+        <label for="false">Falskt</label>
+        <input type="radio" name="q6" value="false" id="false" />
+      </div>
+      <div class="question 7">
+        <h2>Vilka 3 följande öar tillhör Gotlands region?</h2>
+        <label for="öar">Gotska Sandön</label>
+        <input type="checkbox" name="q7" value="gotska" id="gotska" />
+        <label for="öar">Blå Jungfrun</label>
+        <input type="checkbox" name="q7" value="jungfrun" id="jungfrun" />
+        <label for="öar">Stora Karlsö</label>
+        <input type="checkbox" name="q7" value="karlsö" id="karlsö" />
+        <label for="öar">Fårö</label>
+        <input type="checkbox" name="q7" value="fårö" id="fårö" />
+      </div>
+      <div class="question 8">
+        <h2>När är Medeltidsveckan på Gotland?</h2>
+        <label for="v.29">v.29</label>
+        <input type="radio" name="q8" value="v.29" id="v.29" />
+        <label for="v.30">v.30</label>
+        <input type="radio" name="q8" value="v.30" id="v.30" />
+        <label for="v.31">v.31</label>
+        <input type="radio" name="q8" value="v.31" id="v.31" />
+        <label for="v.32">v.32</label>
+        <input type="radio" name="q8" value="v.32" id="v.32" />
+      </div>
+      <div class="question 9">
+        <h2>?</h2>
+        <label for="öar">Gotska Sandön</label>
+        <input type="checkbox" name="q9" value="gotska" id="gotska" />
+        <label for="öar">Blå Jungfrun</label>
+        <input type="checkbox" name="q9" value="jungfrun" id="jungfrun" />
+        <label for="öar">Stora Karlsö</label>
+        <input type="checkbox" name="q9" value="karlsö" id="karlsö" />
+        <label for="öar">Fårö</label>
+        <input type="checkbox" name="q9" value="fårö" id="fårö" />
+      </div>
+      <div class="question 10">
+        <h2>Hur lång är ön?</h2>
+        <label for="längd">156km</label>
+        <input type="radio" name="q10" value="156" id="156" />
+        <label for="längd">106km</label>
+        <input type="radio" name="q10" value="106" id="106" />
+        <label for="längd">176km</label>
+        <input type="radio" name="q10" value="176" id="176" />
+        <label for="längd">206km</label>
+        <input type="radio" name="q10" value="206" id="206" />
+      </div>
+      <div class="showResult">
+        <button id="resultBtn">Rätta prov</button>
+      </div>
+      <div class="popUp">
+        <h2>Resultat</h2>
         <ul id="result"></ul>
+        <button id="correctAnswer">Show Answers</button>
       </div>
     </div>
   </body>

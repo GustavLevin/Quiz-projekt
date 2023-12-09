@@ -1,17 +1,8 @@
-// let resultBtn = document.querySelector("#resultBtn");
-// let q1Answer = document.querySelector('input[name="q1"]:checked');
-// let q2Answer = document.querySelector('input[name="q2"]:checked');
-// let q3Answer = document.querySelector('input[name="q3"]:checked');
-// let q4Answer = document.querySelector('input[name="q4"]:checked');
-// let q5Answer = document.querySelector('input[name="q5"]:checked');
-// let q6Answer = document.querySelector('input[name="q6"]:checked');
-// let q7Answer = document.querySelector('input[name="q7"]:checked');
-// let q8Answer = document.querySelector('input[name="q8"]:checked');
-// let q9Answer = document.querySelector('input[name="q9"]:checked');
-// let q10Answer = document.querySelector('input[name="q10"]:checked');
-
 let correctAnswers = 0;
 const totalQuestions = 10;
+
+
+
 let calculateResults = () => {
 
 
@@ -78,7 +69,7 @@ if(q7Answer.length === 3 &&
 // Fråga 8 
 
 const q8Answer = document.querySelectorAll('input[name="q8"]:checked');
-if(q8Answer && q8Answer.value === 'v.32') {
+if(q8Answer && q8Answer.value === 'Igelkotte') {
     correctAnswers++;
 
 }
@@ -101,21 +92,57 @@ return percentage;
 
 let showResultBtn = document.getElementById("resultBtn");
 let resultList = document.getElementById("result");
+let popUp = document.querySelector(".popUp");
+
+resultList.innerHTML = "";
 
 showResultBtn.addEventListener("click", () => {
+
+    popUp.classList.add("popUpShow");
 
     const percentage = calculateResults();
 
     // Display the result in the result list
-  resultList.innerHTML = `<li>Antal rätt: ${correctAnswers} av ${totalQuestions}</li>`;
+  resultList.innerText = `Antal rätt: ${correctAnswers} av ${totalQuestions}`;
   
   // Color the result based on the percentage
   if (percentage < 50) {
     resultList.style.color = "red";
+    resultList.innerText += "Underkänd"; 
   } else if (percentage >= 50 && percentage < 75) {
-    resultList.style.color = "yellow";
+    resultList.style.color += "yellow";
+    resultList.innerText = "Godkänd"; 
+
   } else {
     resultList.style.color = "green";
+    resultList.innerText += "Riktigt bra jobbat"; 
+
   }
+  
+
+});
+
+let answersArray = {
+    q1: '10000',
+    q2: 'true',
+    q3: 'true',
+    q4: ['hemse', 'sproge'],
+    q5: 'Igelkotte',
+    q6: 'false',
+    q7: ['gotska', 'karlsö', 'fårö'],
+    q8: 'v.32',
+    q9: ['gotska', 'karlsö', 'fårö'],
+    q10: '156',
+  };
+
+
+
+
+let answerBtn = document.querySelector("#correctAnswer");
+
+answerBtn.addEventListener("click", () => {
+    popUp.classList.remove("popUpShow");
+
+
 
 });

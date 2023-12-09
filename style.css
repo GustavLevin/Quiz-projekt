@@ -10,111 +10,85 @@ header {
     text-align: center;
     align-items: center;
     justify-content: center;
-
 }
 
-
 .wrapper {
-    
     height: 100%;
     width: 100%;
     display: flex;
-    
+    flex-direction: column;
+    padding: 20px; /* Add padding to the wrapper */
 }
 
-.q-wrapper {
+/* Style each question */
+.question {
+    background-color: white;
+    margin-bottom: 20px; /* Add margin to create space between questions */
+    padding: 15px; /* Add padding to the questions */
+    border: 2px solid black;
     display: flex;
     flex-direction: column;
 }
 
-.a-wrapper {
-    display: flex;
-    
+/* Style the labels and inputs within each question */
+.question label {
+    margin-bottom: 10px; /* Add margin between label and input */
 }
 
-.question1 {
-    background-color: white;
-    height: 10%;
-    border: 2px solid black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+/* Style the show result button */
+.showResult {
+    margin-top: 20px; /* Add margin to the show result button */
 }
-.question2 {
-    background-color: white;
-    height: 10%;
-    border: 2px solid black;
+
+/* Add some general styling to the radio and checkbox inputs */
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px; /* Add margin to create space between input and label */
+}
+
+/* Add styling to the result list */
+#result {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Style each result item */
+.result-item {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Style correct and incorrect results */
+.correct {
+    background-color: #8aff8a;
+    color: green;
+}
+
+.incorrect {
+    background-color: #ff8a8a;
+    color: red;
+}
+
+.popUp {
+    width: 600px;
+    height: 400px;
+    background: lightgray;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-around;
-    align-items: center;
-    
-}
-.question3 {
-    background-color: white;
-    height: 10%;
-    border: 2px solid black;
+    position: absolute;
+  
+    padding: 2rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 3rem;
+    display: none;
+  }
+  
+  .popUpShow {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-}
-.question4 {
-    background-color: white;
-    height: 10%;
-    border: 2px solid black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-}
-.question5 {
-    background-color: white;
-    height: 10%;
-    border: 2px solid black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-}
-.question6 {
-    background-color: white;
-    height: 10%;
-    border: 2px solid black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-}
-.question7 {
-    background-color: white;
-    height: 10%;
-    border: 2px solid black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.question8 {
-    background-color: white;
-    height: 10%;
-    border: 2px solid black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-}
-.question9 {
-    background-color: white;
-    height: 10%;
-    border: 2px solid black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-    .question10 {
-        background-color: white;
-        height: 10%;
-        border: 2px solid black;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+  }
