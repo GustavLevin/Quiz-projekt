@@ -5,54 +5,72 @@ html, body {
     flex-direction: column;
 }
 
+.dark-mode {
+    background-color: #1a1a1a;
+    color: #ffffff;
+  }
+
 header {
-    height: 75px;
+    height: 100px;
     text-align: center;
     align-items: center;
     justify-content: center;
 }
+
+.mode-toggle {
+    display: flex;
+    
+}
+
+
 
 .wrapper {
     height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 20px; /* Add padding to the wrapper */
+    padding: 20px; 
 }
 
-/* Style each question */
+
 .question {
     background-color: white;
-    margin-bottom: 20px; /* Add margin to create space between questions */
-    padding: 15px; /* Add padding to the questions */
+    margin-bottom: 20px; 
+    padding: 15px; 
     border: 2px solid black;
     display: flex;
     flex-direction: column;
 }
 
-/* Style the labels and inputs within each question */
+.dark-mode .question {
+    background-color: #333; 
+    color: #fff; 
+    border-color: #fff; 
+}
+
+
 .question label {
-    margin-bottom: 10px; /* Add margin between label and input */
+    margin-bottom: 10px; 
 }
 
-/* Style the show result button */
+
 .showResult {
-    margin-top: 20px; /* Add margin to the show result button */
+    margin-top: 20px; 
 }
 
-/* Add some general styling to the radio and checkbox inputs */
+
 input[type="radio"],
 input[type="checkbox"] {
-    margin-right: 5px; /* Add margin to create space between input and label */
+    margin-right: 5px; 
 }
 
-/* Add styling to the result list */
+
 #result {
     list-style-type: none;
     padding: 0;
 }
 
-/* Style each result item */
+
 .result-item {
     margin-bottom: 10px;
     padding: 10px;
@@ -60,16 +78,7 @@ input[type="checkbox"] {
     font-weight: bold;
 }
 
-/* Style correct and incorrect results */
-.correct {
-    background-color: #8aff8a;
-    color: green;
-}
 
-.incorrect {
-    background-color: #ff8a8a;
-    color: red;
-}
 
 .popUp {
     width: 600px;

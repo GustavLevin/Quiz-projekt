@@ -8,15 +8,21 @@
     <script src="main.js" defer></script>
   </head>
   <body>
-    <header><h1>Gotlands Quiz</h1></header>
+    <header>
+      <h1>Gotlands Quiz</h1>
+      <div class="mode-toggle">
+        <button id="darkModeBtn">Dark Mode</button>
+        <button id="lightModeBtn">Light Mode</button>
+      </div>
+    </header>
     <div class="wrapper">
       <div class="question 1">
         <h2>Hur många bor på Gotland?</h2>
-        <label for="10 000">10 000</label>
+        <label for="10 000">40 000</label>
         <input type="radio" name="q1" value="10000" id="10000" />
-        <label for="20 000">20 000</label>
+        <label for="20 000">100 000</label>
         <input type="radio" name="q1" value="20000" id="20000" />
-        <label for="40 000">40 000</label>
+        <label for="40 000">90 000</label>
         <input type="radio" name="q1" value="40000" id="40000" />
         <label for="60 000">60 000</label>
         <input type="radio" name="q1" value="60000" id="60000" />
@@ -42,10 +48,10 @@
         <input type="checkbox" name="q4" value="hemse" id="hemse" />
         <label for="alt2">Sproge</label>
         <input type="checkbox" name="q4" value="sproge" id="sproge" />
-        <label for="alt3">Alternativ 3</label>
-        <input type="checkbox" name="q4" value="alternativ3" id="alternativ3" />
-        <label for="alt4">Alternativ 4</label>
-        <input type="checkbox" name="q4" value="alternativ4" id="alternativ4" />
+        <label for="alt3">Lärbro</label>
+        <input type="checkbox" name="q4" value="lärbro" id="lärbro" />
+        <label for="alt4">Martle</label>
+        <input type="checkbox" name="q4" value="martle" id="martle" />
       </div>
       <div class="question 5">
         <h2>Vad betyder Pinnsvein på gotländska?</h2>
@@ -88,15 +94,15 @@
         <input type="radio" name="q8" value="v.32" id="v.32" />
       </div>
       <div class="question 9">
-        <h2>?</h2>
-        <label for="öar">Gotska Sandön</label>
-        <input type="checkbox" name="q9" value="gotska" id="gotska" />
-        <label for="öar">Blå Jungfrun</label>
-        <input type="checkbox" name="q9" value="jungfrun" id="jungfrun" />
-        <label for="öar">Stora Karlsö</label>
-        <input type="checkbox" name="q9" value="karlsö" id="karlsö" />
-        <label for="öar">Fårö</label>
-        <input type="checkbox" name="q9" value="fårö" id="fårö" />
+        <h2>Vilka av följande 3 stränder finns på Gotland?</h2>
+        <label for="öar">löjsta</label>
+        <input type="checkbox" name="q9" value="löjsta" id="löjsta" />
+        <label for="öar">Holmhällar</label>
+        <input type="checkbox" name="q9" value="holmhällar" id="holmhällar" />
+        <label for="öar">Sandviken</label>
+        <input type="checkbox" name="q9" value="sandviken" id="sandviken" />
+        <label for="öar">Smöjen</label>
+        <input type="checkbox" name="q9" value="smöjen" id="smöjen" />
       </div>
       <div class="question 10">
         <h2>Hur lång är ön?</h2>
