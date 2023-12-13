@@ -180,7 +180,9 @@ label input[type="checkbox"]:checked + span {
 #result {
     list-style-type: none;
     padding: 0;
+    font-size: 1.5rem;
 }
+
 
 .result-item {
     margin-bottom: 10px;
@@ -211,4 +213,15 @@ label input[type="checkbox"]:checked + span {
 
 .popUpShow {
     display: flex;
+}
+
+#correctAnswer {
+    height: 60px;
+    width: 250px;
+    font-size: 1.5rem;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
