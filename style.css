@@ -1,75 +1,152 @@
-html, body {
+body {
     height: 100%;
     margin: 0;
     display: flex;
     flex-direction: column;
+    background-color: #f5f5f5; 
+    font-family: 'Arial', sans-serif;
 }
 
 .dark-mode {
     background-color: #1a1a1a;
     color: #ffffff;
-  }
+}
 
 header {
     height: 100px;
     text-align: center;
     align-items: center;
     justify-content: center;
+    background-color: #f5f5f5; 
+    color: #333; 
+}
+
+
+.dark-mode header {
+    background-color: #333; 
+    color: #fff; 
+}
+
+
+h1 {
+    margin: 0;
+    font-size: 2rem;
 }
 
 .mode-toggle {
     display: flex;
-    
+    justify-content: flex-end;
+    padding: 10px;
 }
 
-
+#darkModeBtn {
+    background-color: #333; 
+    color: #fff; 
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
 
 .wrapper {
     height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 20px; 
+    padding: 20px;
 }
-
 
 .question {
-    background-color: white;
-    margin-bottom: 20px; 
-    padding: 15px; 
-    border: 2px solid black;
-    display: flex;
-    flex-direction: column;
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 2px solid #333; 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
 }
 
-/* Style for correct answers */
+
 .question.correct {
-    background-color: #8aff8a; /* Light green background */
-    color: green; /* Green text color */
+    background-color: #8aff8a !important; 
+    color: green !important; 
+    border-color: #4caf50; 
 }
 
-/* Style for incorrect answers */
+
 .question.incorrect {
-    background-color: #ff8a8a; /* Light red background */
-    color: red; /* Red text color */
+    background-color: #ff8a8a !important; 
+    color: red !important; 
+    border-color: #f44336; 
 }
-
 
 .dark-mode .question {
-    background-color: #333; 
-    color: #fff; 
-    border-color: #fff; 
+    background-color: #333;
+    color: #fff;
+    border-color: #fff;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.question h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.question label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1rem;
 }
 
 
-.question label {
-    margin-bottom: 10px; 
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+    appearance: none; 
+    border: 2px solid #333; 
+    border-radius: 5px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.dark-mode input[type="radio"],
+.dark-mode input[type="checkbox"] {
+    border: 2px solid white;
+}
+
+
+input[type="radio"]:hover,
+input[type="checkbox"]:hover,
+input[type="radio"]:focus,
+input[type="checkbox"]:focus {
+    border-color: #4caf50;
+}
+
+input[type="radio"]:checked,
+input[type="checkbox"]:checked {
+    background-color: #4caf50; 
+    border-color: #4caf50;
+    color: #fff; 
+}
+
+
+label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+
+label input[type="radio"]:checked + span,
+label input[type="checkbox"]:checked + span {
+    background-color: #4caf50; 
+    color: #fff; 
 }
 
 
 .showResult {
     margin-top: 20px;
-    display: flex; 
+    display: flex;
     justify-content: center;
     align-items: flex-end;
 }
@@ -77,30 +154,42 @@ header {
 #resultBtn {
     height: 50px;
     width: 300px;
-    
+    background-color: #4caf50; 
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
 }
 
-
-input[type="radio"],
-input[type="checkbox"] {
-    margin-right: 5px; 
+#resultBtn:hover {
+    background-color: #45a049;
 }
 
+#tryAgainBtn {
+    height: 50px;
+    width: 300px;
+    background-color: #4caf50; 
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
 
 #result {
     list-style-type: none;
     padding: 0;
 }
 
-
 .result-item {
     margin-bottom: 10px;
     padding: 10px;
     border-radius: 5px;
     font-weight: bold;
+    background-color: #e0e0e0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
-
-
 
 .popUp {
     width: 600px;
@@ -110,16 +199,16 @@ input[type="checkbox"] {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    position: absolute;
-  
+    position: fixed;
     padding: 2rem;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 3rem;
+    transition: opacity 0.3s ease-in-out;
     display: none;
-  }
-  
-  .popUpShow {
+}
+
+.popUpShow {
     display: flex;
-  }
+}
